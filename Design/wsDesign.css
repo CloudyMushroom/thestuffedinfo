@@ -1,0 +1,169 @@
+body
+{
+    background-image:linear-gradient(to bottom right, #0b80a7, #7ecce6);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;    
+}
+.flexReg
+{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;        
+    transition: .5s;
+     
+}
+
+.succReg
+{
+    margin: 1em;  
+    background-color: white;
+    text-align: center;
+    border: solid #505050 3px;
+    border-radius: 1em;
+    padding: 1em;        
+    transition: .5s;    
+    visibility: hidden;
+    animation: moveDown 1s 1;  
+    transform: translateY(250px)
+}
+
+
+@keyframes moveDown 
+{
+    0%, 100%
+    {   
+        visibility: visible;
+        transform: translateY(250px) scale(1.0);
+    }    
+    50%
+    {
+        visibility: visible;
+        transform: translateY(250px) scale(1.1);
+    }
+}
+
+.succReg > :first-child
+{
+    font-weight: bold;
+    font-size: 2em;    
+}
+
+.hmPage
+{
+    background-color: #086788;
+    border: solid #086788 1px;
+    padding: .5em .5em;    
+    color: white;
+    transition: .5s;
+    border-radius: 0em;    
+    max-width: 5em;    
+}
+
+.hmPage:hover
+{
+    font-weight: normal;
+    color: white;
+    border: solid #0b80a7 1px;
+    background-color: #0b80a7;
+    box-shadow: 0px 1px 5px 2px #d3d3d3;   
+   
+}
+
+#wizRegister, #stuRegister
+{    
+    box-shadow: 1pt 2pt 3pt rgba(0, 0, 0, 0.4);
+    border: solid #505050 2px;    
+    border-radius: 1em;
+    margin: 2.5em 0em 1em 0em;
+    padding: 1em;
+    background-color: white;    
+}
+#stuRegister
+{
+    margin: 8em 0em 1em 0em;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+}
+
+section > div
+{
+    font-size: 1.5em;
+    color: black;
+    
+}
+.regHead
+{
+    display: flex;
+   
+}
+
+.regHead > p
+{
+    margin-top: .2em;
+    
+}
+.sendPic
+{
+    border: solid #505050 1px;
+    border-radius: 1em;
+}
+
+.sendPic > input
+{
+    border: none;
+    background-color: white;
+    margin-top:0px;
+}
+.sendPic > input:hover
+{
+    box-shadow: 0pt 0pt 0pt 0pt white;
+}
+
+
+.borderThis
+{
+    border: solid #505050 1px;
+    border-radius: 10px;
+}
+
+
+.regTitle > a> h1
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #086788;
+}
+.regTitle > a> h1:hover
+{
+    
+    color: #0b80a7;
+}
+
+.regTitle > i
+{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+p
+{
+    margin: 0px;
+    margin-bottom: .5em;
+}
+
+input, textarea
+{
+    background-color: #f5f5f5;
+}

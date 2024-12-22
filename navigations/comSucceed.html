@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Design/wsDesign.css">
+    <link rel="stylesheet" href="../Design/own.css">
+    <title>Succeed</title>
+</head>
+<body>
+        <style>
+            .flexReg, .succReg
+            {                                                                  
+                transition: .5s;
+                visibility: visible;
+            }
+            .succReg:first-child
+            {
+                color: green;
+            }
+         </style>
+
+        <div class="flexReg">
+            <div class="succReg">            
+                <div>SENT</div>
+                <div>Thank you! Your message is sent to the developers.</div>
+                <br>
+                <a class="hmPage" onclick="goBacc()">back</a>
+            </div>     
+        </div>
+
+
+        <script>  
+            function goBacc() 
+            {
+                window.history.back();
+            }      
+            
+        </script>
+
+</body>
+</html>

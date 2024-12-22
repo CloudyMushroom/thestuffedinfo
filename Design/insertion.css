@@ -1,0 +1,65 @@
+
+.searchCard
+{
+    transform: translateY(-300px);
+    
+    
+}
+
+label
+{
+    padding-top: 1em;
+    justify-content: flex-end;        
+}
+strong
+{
+    color: #086788;
+}
+.searchEmbed
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 1199px) 
+{
+    .searchCard
+    {
+        transform: translateY(-600px);
+    }
+    label
+    {
+        justify-content: flex-start;   
+        padding: .5em 0em 0em 0em; 
+    }
+}
+
+@media screen and (max-width: 829px) 
+{
+    .searchCard
+    {
+        transform: translateY(-600px);
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+
+    .searchCard
+    {
+      
+        transform: translateY(-600px);
+    }
+    
+
+}
+@media screen and (max-width: 748px) 
+{
+    .searchCard
+    {        
+        transform: translateY(-600px);
+        
+        
+    }
+}

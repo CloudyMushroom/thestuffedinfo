@@ -1,0 +1,79 @@
+.searchCard
+{
+    visibility: visible;
+    transform: translateY(160px);    
+
+}
+
+.searchContent
+{
+    transform: translateX(0px);      
+    border: none;
+    padding: 2em;
+    visibility: visible;
+    text-align: left;
+    max-width: 50em;
+    border: solid #505050 1px;
+}
+
+label
+{
+    padding: 1em 0em 0em 0em;
+    justify-content: flex-start;        
+}
+strong
+{
+    color: #086788;
+}
+.searchEmbed
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+}
+.searchEmbed > a:first-child
+{
+    color: #086788;
+    background-color: transparent;
+}
+
+#term>strong
+{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#meaning
+{
+
+    border-radius: 1em;
+    padding: 0em .5em 1em 3em;
+}
+
+.reference
+{
+    color: #505050;
+}
+
+#comArea
+{
+    border-bottom-left-radius: 0em;
+}
+
+p
+{
+    margin: 0em;
+}
+
+@media screen and (max-width: 1199px)
+{
+    .searchCard
+    {
+        transform: translateY(120px);
+    }
+}
+
+
+
+
+

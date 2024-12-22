@@ -1,0 +1,198 @@
+/*1199 767 386*/
+@media screen and (max-width: 1200px) {
+    #theBody
+    {
+        top: 1em;
+    }
+    .searchCard
+    {
+        transform: translateY(-425px);
+    }
+      
+
+}
+@media screen and (max-width: 1199px) 
+{
+    .searchCard
+    {
+        transform: translateY(-555px);
+    }
+    #wizRegister, #stuRegister
+    {
+        margin: 2em 3em;
+    }
+}
+
+@media screen and (max-width: 1099px) 
+{
+    .theFlexRegis
+    {
+        flex-direction: column;
+        
+    }
+    
+    .theFlexRegis.active
+    {   
+        transform: translateY(20px);
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width: 829px) 
+{
+    .searchCard
+    {
+        transform: translateY(-578px);
+    }
+    .theSidebar2.active, .theSidebar3.active
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 10em;
+        z-index: 6;
+        background-color: rgb(255, 255, 255,  0.9);               
+        border-top: solid #505050 2px;      
+        border-bottom: solid #505050 2px;      
+        
+    }
+    .theSidebar2.active > li, .theSidebar3.active > li
+    {
+        margin-right: 1em;
+        margin-bottom: .5em;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    #theBody
+    {
+        margin: 1em;
+    }
+    .searchCard
+    {
+      
+        transform: translateY(-570px);
+    }
+    
+
+}
+
+@media screen and (max-width: 748px) 
+{
+    .searchCard
+    {        
+        transform: translateY(-595px);
+        
+        
+    }
+}
+
+@media screen and (max-width:672px)
+{
+  
+    .searchContent
+    {
+        padding: 5em 1em 5em .5em;
+    }
+  
+   
+}
+
+@media screen and (max-width: 575px) 
+{
+    .mitButton
+    {
+        margin-top: 0em;
+    }    
+
+}
+@media screen and (max-width: 524px)
+{
+    .theSidebar.active
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 10em;
+        z-index: 6;
+        background-color: rgb(255, 255, 255,  0.9);               
+        border-top: solid #505050 2px;      
+        border-bottom: solid #505050 2px;  
+        
+    }
+
+    .theSidebar.active > li
+    {
+      
+        margin-right: 1em;
+        margin-bottom: .5em;
+    }
+
+    li:first-child
+    {
+        margin-left: .2em;
+    }
+
+}
+
+@media screen and (max-width: 500px) 
+{
+ 
+    .searchCard
+    {
+        margin: 0em 2em;
+    }
+    .searchContent
+    {
+        padding-right: 2em;
+    }
+    .formLogin.active
+    {
+        margin: 0em 2em;
+    }
+}
+
+@media screen and (max-width: 435px) 
+{
+    .searchCard
+    {
+        transform: translateY(-620px);
+    }
+    #wizRegister, #stuRegister
+    {
+        margin: 2em;
+        border: solid #505050 1px;
+        
+    }
+}
+
+@media screen and (max-width: 386px)
+{
+    #theBody
+    {
+        margin: 0em 0em;
+    }
+    .searchCard
+    {
+        margin: 1em 1em;
+    }
+}
+
+@media screen and (max-width: 366px)
+{
+ 
+    #flexBurger
+    {
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+
+    .theSidebar
+    {
+        background-color: white;
+    }
+ 
+}
+
+

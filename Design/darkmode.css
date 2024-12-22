@@ -1,0 +1,146 @@
+
+body
+{
+    color: white;
+    background-color: #222836;
+}
+
+#theSubBody
+{
+    background-color: #181E2A;
+}
+#theHeader
+{
+    background-color: #181E2A;
+}
+
+.main_can.dark
+{
+    
+}
+
+
+a
+{
+    text-decoration: none;
+    /*color: #01FFF4;  */
+    color: white;  
+     
+}
+
+
+h2
+{
+    background-color: transparent;
+    color: #01FFF4;
+    border: solid #01FFF4 3px;
+    
+    
+}
+
+h2:hover
+{
+    border: solid #01FFF4 3px;
+    border-radius: 1em;      
+    box-shadow: 0pt 0pt 4pt 1pt #01FFF4 ;    
+    text-shadow: 1pt 2pt 3pt rgba(0, 0, 0, 0.4);
+    background-color: #01FFF4;
+    color: black;
+}
+
+#theHeader
+{
+    border-bottom:solid #01FFF4 5px;
+    box-shadow: 0pt 0pt 5pt .1pt #01FFF4 ;
+    
+}
+
+#theSubBody
+{
+    box-shadow: 0pt 0pt 3pt rgba(0, 0, 0, 0.4);  
+}
+#theSubBody:hover
+{
+    box-shadow: 0pt 0pt 5pt 1pt #01FFF4 ; 
+}
+
+.borgir, .borgir::before, .borgir::after
+{
+    background-color: #01FFF4;    
+}
+.theSidebar2 >li:last-child>a, .theSidebar3 >li:last-child>a
+{
+    color: #7CFF01;  
+}
+
+
+a:hover
+{
+    /*color: #FFF205;*/ 
+    color: #01FFF4;   
+    
+}
+
+.searchContent, .backFlex
+{
+    background-color: #181E2A;
+}
+
+.searchButton
+{   
+    background-color: transparent;
+    color: #FFF205;
+    border: solid #FFF205 3px;
+    
+}
+
+.searchButton:hover
+{
+    font-weight: normal;    
+    border: solid #FFF205 3px;
+    border-radius: 1em;      
+    box-shadow: 0pt 0pt 4pt .1pt #FFF205 ;    
+    text-shadow: 1pt 2pt 3pt rgba(0, 0, 0, 0.4);
+    background-color: #FFF205;
+    color: black;
+}
+.Bacc
+{
+    color: #FFF205;
+}
+
+input, textarea
+{
+    background-color: #252831 ; 
+    color: white; 
+}
+
+
+input:hover, textarea:hover
+{
+    box-shadow: 0pt 0pt 4pt .1pt #FFF205 ;  
+}
+
+input:focus, textarea:focus
+{
+    color: white;
+    border: solid #FFF205 1px; 
+    box-shadow: 0pt 0pt 0pt 1pt #FFF205;    
+}
+
+.theSidebar2.active, .theSidebar3.active
+{
+    background-color: rgb(24, 30, 42, 0.9);
+
+}
+
+@media screen and (max-width: 829px)
+{
+    .theSidebar2.active, .theSidebar3.active
+    {
+        background-color: rgb(24, 30, 42, 0.9);
+        border-top: solid #01FFF4 2px;
+        border-bottom: solid #01FFF4 2px;
+    }
+}
+

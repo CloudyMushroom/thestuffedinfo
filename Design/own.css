@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap');
+
+/*Above is a url for Poppins font*/
+html, body
+{
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;     
+    color: #505050;    
+    background-color: #EFEFEF;
+
+    
+}
+
+li
+{
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+a
+{
+    cursor: pointer;
+    color: #505050;
+    text-decoration: none;    
+}
+
+a:hover
+{
+    color: #086788;    
+    font-weight: bold;    
+}
+
+.theFlexLog
+{
+    display: flex;
+    justify-content: center;    
+/* These are necessary to fill and ignore whatever the elements behind is */
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+/* ------------ */
+    transform: translateY(-550px);
+    visibility: hidden;
+    transition: .5s;
+}
+
+.theFlexLog.active
+{
+    
+    transform: translateY(150px);
+    visibility: visible;
+    
+}
+
+.flexFP
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .3em;       
+}
+
+.flexFP > a
+{
+    color: #a1a1a1;
+    font-size: .8em;
+}
+.flexFP > a:hover
+{
+    color: #086788;
+}
+.subButton
+{
+    background-color: #086788;
+    border-radius: 0em;
+    border: solid #086788 1px;
+    color: white;
+}
+.subButton:hover
+{
+
+    color: white;
+    border: solid #0b80a7 1px;
+    background-color: #0b80a7;
+    box-shadow: 0px 1px 5px 2px #d3d3d3;   
+}
+.formLogin /*for clear loading*/
+{
+    border: solid #505050 2px;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    transition: .5s;
+    padding: 1em;
+}
+.formLogin.active
+{
+    border: solid #505050 2px;
+    border-radius: 1em;
+    background-color: #FFFFFF;
+    visibility: visible;
+    box-shadow: 0px 0px 2px 1px #808080;
+    padding: 1em;
+}
+.marksSpot
+{       
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: -61px;    
+    padding-top: 1em;
+    padding-left: 2px;
+    animation: MoveUpDown 1s infinite;    
+}
+
+@keyframes MoveUpDown
+    {
+        0%, 100%
+        {
+            transform: translateY(0px);
+        }
+        50%
+        {
+            transform: translateY(10px);
+        }
+    }
+
+.theEks
+{
+    transition: 1s;
+}
+
+.theEks:hover::before, .theEks:hover::after
+{
+    background-color: #ec3a52;
+}
+
+.theEks::before
+{
+    content: '';
+    position: absolute;    
+    border-radius: 1em;
+    width: 25px;
+    height: 6px;
+    background-color: #505050;
+    transform: translateX(-6px) rotate(-55deg);
+    visibility: visible;
+
+}
+.theEks::after
+{
+    content: '';
+    position: absolute;
+    border-radius: 1em;
+    width: 25px;
+    height: 6px;
+    background-color: #505050;
+    transform: translateX(6px) rotate(55deg);
+    visibility: visible;
+}
+
+.theFlexRegis
+{
+   
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    flex-wrap: wrap;
+ /* These are necessary to fill and ignore whatever the elements behind is */
+    /*position: fixed; if fixed, scrolling is prohibited*/
+    position: absolute; 
+    width: 100%;
+    z-index: 5;
+ /* ------------ */
+    transform: translateY(-550px);
+    visibility: hidden;
+    transition: .5s; 
+    
+}
+
+
+.theFlexRegis.active
+{   
+    transform: translateY(150px);
+    transition: .5s; 
+    visibility: visible;
+    
+}
+.regisFlex
+{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0em 2em;
+    margin: 1em;
+    border: solid #505050 2px;
+    box-shadow: 0px 0px 2px 1px #808080;
+}
+.regisTitle
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lalezar', cursive;
+    font-size: 2.5em;
+    cursor: default;
+    
+}
+
+.flexButtons
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flexButtons > a
+{
+    background-color: #086788;
+    border: solid #086788 2px;
+    padding: .5em .5em;    
+    color: white;
+    transition: .5s;
+    margin: .5em;
+}
+.flexButtons > a:not(:first-child):not(:last-child)
+{
+    background-color: #ec3a52;
+    border: solid #ec3a52 2px;
+    padding: .5em .5em;    
+    color: white;
+    transition: .5s;
+    margin: .5em;
+}
+.flexButtons > a:not(:first-child):not(:last-child):hover
+{
+    font-weight: normal;
+    color: white;
+    border: solid #ff6378 2px;
+    background-color: #ff6378;
+    box-shadow: 0px 1px 5px 2px #d3d3d3;   
+}
+
+.flexButtons > a:hover
+{
+    font-weight: normal;
+    color: white;
+    border: solid #0b80a7 2px;
+    background-color: #0b80a7;
+    box-shadow: 0px 1px 5px 2px #d3d3d3;   
+}
+
+
+
+.wizard, .student /*.regisFlex*/
+{
+    padding: 1em;   
+    width: 21em;
+    visibility: hidden; /*for clear loading*/
+    transition: .5s;  
+    
+}
+.wizard.active, .student.active
+{    
+    border: solid #505050 2px;
+    border-radius: 1em;
+    padding: 1em;   
+    width: 21em;
+    background-color: white;
+    /*box-shadow: 0pt 0pt 1pt 1pt black;*/
+    visibility: visible;    
+    box-shadow: 0px 0px 2px 1px #808080;
+    cursor:default;
+   
+}
+
+.wizard.active:hover, .student.active:hover
+{
+    box-shadow: 0px 1px 4px 1px #086788;
+    border: solid #086788 2px;
+}
+.student.active
+{
+    margin-bottom: 1em;
+    padding-bottom: 8em;
+}
+
+.wizCap > li
+{
+    list-style-type: disc;
+    
+}
+ul
+{
+    margin:0em;
+}
+
+.wizNote
+{
+    font-size: 11px;
+    font-style: italic;
+    
+}
+
+.wsIcon
+{
+    display: flex;
+    justify-content: center;       
+    margin-bottom: .5em;
+    z-index: 4;
+    transition: .5s;   
+}
+
+.wsCont
+{
+    
+    z-index: 5;
+}
+
+.wizStu
+{
+    border: solid #086788 2px;
+    background-color: #086788;
+    padding: .5em;
+    color: white;
+}
+
+.wizStu:hover
+{
+    font-weight: normal;
+    color: white;
+    border: solid #0b80a7 2px;
+    background-color: #0b80a7;
+    box-shadow: 0px 1px 5px 2px #d3d3d3;   
+}
+
+
+
+/*  FOR REGISTER HTML */
+input, textarea
+{
+    border: solid #505050 1px;
+    border-radius: 1em;   
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    padding: .5em;
+    margin: .5em 0em .5em 0em;
+    width: 100%;
+    resize: none;
+}
+
+input:hover
+{
+
+    box-shadow: 0px 0px 3px 1px #d3d3d3;
+}
+
+textarea:focus, input:focus
+{
+    transition: .2s;
+    outline: none;
+    box-shadow: 0pt 0pt 0pt 1pt #086788;    
+    /*hor ver blur hard*/
+    border: solid #086788 1px;        
+}
+
+label
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: .5em;        
+}
+
+
+/* END OF REGISTER HTML */
+
+.logHeader > h1
+{
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .1em;
+}
+
+.loginButton, .mitButton
+{
+    margin-top: 2em;
+}
+
+
+
+.logSubHeader
+{
+    display: block;
+    text-align: center;
+    margin-bottom: .5em;
+}
+h2
+{
+    margin:5px;
+    padding:5px;
+    border: solid #086788 1px;
+    border-radius: 1em;
+    transition: .5s;    
+     
+    color: #FFFFFF;
+    background-color: #086788;
+}
+h2:hover
+{
+    color:#086788;
+    transform: scale(1.1);    
+    
+    border: solid #086788 1px;
+    background-color: #FFFFFF;
+    /*box-shadow: 0px 0px 2px 1px #086788;*/   
+}
+
+.theSidebar, .theSidebar2, .theSidebar3
+{    
+    display: flex;
+    justify-content: flex-end;
+    position: absolute; /*To make it relative to the parent*/
+    overflow: hidden; 
+    width: 0px;
+    /*width: 190px;*/ /*width: 340px;*/ /*width: 390px;*/
+    height: 2em;    
+    padding-top: 5px;
+    margin-top: 3px;
+    margin-right: 42px;
+    transition: .5s;
+    
+}
+.theSidebar2> li:last-child > a, .theSidebar3> li:last-child>a
+{
+    color: #086788;
+    font-weight: bold;
+}
+
+.theMenu
+{
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;                   
+}
+
+.borgir
+{
+    width: 40px;
+    height: 6px;
+    background-color: #505050;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+.borgir::before, .borgir::after
+{
+    content:'';
+    position: absolute;
+    width: 40px;
+    height: 6px;    
+    background-color: #505050;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.borgir::before
+{
+    transform: translateY(-13px);
+}
+
+.borgir::after
+{
+    transform: translateY(13px);
+}
+
+
+.theMenu.open .borgir
+{
+    transform: rotate(180deg);
+    background-color: transparent;
+   
+
+}
+
+.theMenu.open .borgir::before
+{
+    transform: rotate(-315deg);
+}
+
+.theMenu.open .borgir::after
+{
+    transform: rotate(135deg);
+}
+
+
+.eks
+{
+    position: absolute;
+    width: 25px;    
+    z-index: 2;
+    overflow: hidden;
+    
+}
+
+#theHeader
+{    
+    background-color: #FFFFFF;
+    z-index: 5;
+    border-bottom: solid #086788 5px;
+    position:sticky;
+    top:0px;
+    padding: 0em 2em;   
+  
+}
+
+#flexBurger
+{
+    display: flex;
+    justify-content: flex-end;    
+    margin-top: 1.8em;
+    margin-right: .5em;     
+}
+
+#theBody
+{
+    position: relative;
+    top: 90px;
+}
+
+#theSubBody
+{
+    background-color: #ffffff;
+    border: solid #505050 1px;  
+    border-radius: 1em;
+    margin: 0em 1.5em 3em 1.5em;      
+    padding: 0em 1em 1em 1em;
+    text-align: center;  
+    visibility: visible;
+}
+
+#theSubBody:hover
+{
+    box-shadow: 0px 1px 5px 2px #d3d3d3;    
+}
+
+#subFooter
+{
+
+    background-color: #086788;       
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 0px 2px #086788;
+}
+
+
+
+#theFooter
+{
+    border: solid #505050 2px;
+    margin: 2em;
+    text-align: center;    
+    position: relative;
+    
+}
+
+
+
+.searchContent
+{
+    background-color: #FFFFFF;
+    border: solid #505050 1px;
+    border-top-right-radius: 1em;    
+    border-bottom-right-radius: 1em;
+    border-left: none;
+    padding: 5em 5em 5em 3em;
+    transform: translateX(1500px);
+    transition: .5s;
+
+}
+
+.searchCard
+{
+    display: flex;
+    justify-content: center;    
+    text-align: center;                  
+    transform: translateY(-321px);
+    visibility: hidden;
+    transition: .5s;
+}
+
+.searchLabel
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+.searchEmbed
+{
+    margin-top: .5em;
+}
+.searchButton 
+{    
+    background-color: #086788;
+    border: solid #086788 1px;
+    padding: .5em .5em;    
+    color: white;
+    transition: .5s;
+    border-radius: 0em;
+    margin: 0em;
+    max-width: 5em;
+}
+
+.searchButton:hover
+{
+    
+    font-weight: normal;
+    color: white;
+    border: solid #0b80a7 1px;
+    background-color: #0b80a7;
+    box-shadow: 0px 1px 5px 2px #d3d3d3;   
+   
+}
+.Bacc
+{
+    margin-top: .5em;
+    height: 40px;
+}
+
+.Bacc:hover
+{
+    color: #086788;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.backFlex
+{
+    display: flex;
+    border: solid #505050 1px;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-right: none;
+    background-color: #FFFFFF;
+    padding: 0em 0em 0em .5em;
+    transform: translateX(1500px);
+    transition: .5s;
+}
+
+
+/*
+.lineFooter
+{
+    width:100%;
+    height: 3px;
+    background-color: #505050;
+    margin: 3em 0em 1em 0em;   
+    /*clockwise postition of margin top right bottom left
+}*/
+
+
+
+/*
+h2:active
+{
+    border-radius: 1em;
+    background-color: aqua;
+}
+*/
+
